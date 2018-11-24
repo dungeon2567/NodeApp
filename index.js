@@ -7,6 +7,6 @@ app.use(compression({level: 9}));
 
 app.use(express.static('public'));
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 80, function () {
   console.log('Example app listening on port 3000!');
 });
